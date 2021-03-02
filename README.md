@@ -1,5 +1,50 @@
 # 1. Theory and Practice of Finite Element Methods
 
+This is shared course between the SISSA PhD track
+on Mathematical Analysis, Modeling, and Applications
+(math.sissa.it) and the Master in High Performance Computing
+(www.mhpc.it). It is a course that follows two parallel lines:
+theory of finite element methods (graduate students level, ~20 hours) and
+practice of finite element methods (mhpc students levels, ~20 hours).
+
+The goal of the course is to provide to the students advanced
+analysis tools for finite element methods, as well as 
+state-of-the-art programming knowledge for the actual implementation part.
+
+The theory ranges from basic FEM and functional analysis arguments, like
+Lax-Milgram, Cea, and Bramble Hilbert lemmas, to more advanced topics,
+like inf-sup conditions and a-posteriori error analysis.
+
+The goal of the practice part is to enable a PhD or MHPC student working on
+numerical analysis of PDEs to implement a state-of-the-art adaptive finite
+element code, that runs in parallel, using modern C++ libraries. The 
+implementation will be based on the `deal.II` library (www.dealii.org).
+
+What you will learn:
+- Advanced Finite Element theory
+- How to use a modern C++ IDE, to build and debug your codes
+- How to use a large FEM library to solve complex PDE problems
+- How to properly document your code using Doxygen
+- How to use a proper Git workflow to develop your applications
+- How to leverage GitHub actions, google tests, and docker images to test and deploy your application
+- How hybrid parallelisation (threads + MPI + GPU) works in real life FEM applications
+
+## Useful links
+
+Course classroom on GitHub (for assignments/exercises)
+- https://classroom.github.com/classrooms/14195552-theory-and-practice-of-finite-element-methods
+
+Course slides, notes, materials, and codes:
+- https://github.com/luca-heltai/theory-and-practice-of-fem
+
+Course recordings:
+- https://bit.ly/3uKDQWa
+
+## Course program
+
+A tentative detailed program is shown below 
+(this will be updated during the course to reflect the actual course content)
+
 1. Practical Introduction to Galerkin methods
 2. Implementation of a serial Poisson solver
    1. Introduction to tools (Python VS C++/IDE)
