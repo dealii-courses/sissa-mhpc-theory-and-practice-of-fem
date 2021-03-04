@@ -38,7 +38,7 @@ Course slides, notes, materials, and codes:
 - https://github.com/luca-heltai/theory-and-practice-of-fem
 
 Course recordings:
-- https://bit.ly/3uKDQWa
+- https://bit.ly/2NY46LZ
 
 ## Course program
 
