@@ -32,10 +32,10 @@ What you will learn:
 ## Useful links
 
 Course classroom on GitHub (for assignments/exercises)
-- https://classroom.github.com/classrooms/14195552-theory-and-practice-of-finite-element-methods
+- https://classroom.github.com/classrooms/79978118-finite-element-methods-using-deal-ii-sissa-mhpc
 
 Course slides, notes, materials, and codes:
-- https://github.com/luca-heltai/theory-and-practice-of-fem
+- https://github.com/dealii-courses/sissa-mhpc-theory-and-practice-of-fem
 
 Course recordings:
 - https://bit.ly/2NY46LZ
