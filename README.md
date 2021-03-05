@@ -31,6 +31,9 @@ What you will learn:
 
 ## Useful links
 
+Course main page, with schedule and up to date information
+- https://www.math.sissa.it/course/phd-course/theory-and-practice-finite-element-methods
+
 Course classroom on GitHub (for assignments/exercises)
 - https://classroom.github.com/classrooms/79978118-finite-element-methods-using-deal-ii-sissa-mhpc
 
