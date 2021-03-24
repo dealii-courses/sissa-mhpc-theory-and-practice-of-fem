@@ -88,6 +88,13 @@ If time permits:
     1. [C++] Multigrid methods
     2. [C++] Block preconditioning
 
+## Assignments
+
+- [Git & GitHub fundamentals](https://classroom.github.com/a/jgOfbppY)
+- [Environment setup](https://classroom.github.com/a/NmHY4jke)
+- [Triangulation, DoFHandler, and FiniteElement](https://classroom.github.com/a/dtA1drjC)
+- [Poisson problem](https://classroom.github.com/a/07X-eFIP)
+
 <!-- 
 1. Drift Diffusion problems
    1. [C++] Poisson + Strong advection term = instability
