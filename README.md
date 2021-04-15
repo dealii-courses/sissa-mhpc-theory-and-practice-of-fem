@@ -95,6 +95,7 @@ If time permits:
 - [Triangulation, DoFHandler, and FiniteElement](https://classroom.github.com/a/dtA1drjC)
 - [Poisson problem](https://classroom.github.com/a/07X-eFIP)
 - [Bramble-Hilbert Lemma in action](https://classroom.github.com/a/UP_uUQKS)
+- [Boundary conditions and constraints](https://classroom.github.com/a/3aHzmb3d)
 
 <!-- 
 1. Drift Diffusion problems
