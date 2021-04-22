@@ -96,6 +96,7 @@ If time permits:
 - [Poisson problem](https://classroom.github.com/a/07X-eFIP)
 - [Bramble-Hilbert Lemma in action](https://classroom.github.com/a/UP_uUQKS)
 - [Boundary conditions and constraints](https://classroom.github.com/a/3aHzmb3d)
+- [Adaptive Finite Element methods for the Poisson problem](https://classroom.github.com/a/at3-IuiW)
 
 <!-- 
 1. Drift Diffusion problems
