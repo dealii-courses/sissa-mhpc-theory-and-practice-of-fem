@@ -98,3 +98,4 @@ If time permits:
 - [Boundary conditions and constraints](https://classroom.github.com/a/3aHzmb3d)
 - [Adaptive Finite Element methods for the Poisson problem](https://classroom.github.com/a/at3-IuiW)
 - [Shared memory parallelization](https://classroom.github.com/a/_GQiC4oN)
+- [MPI parallelisation](https://classroom.github.com/a/QHg-q9wA)
