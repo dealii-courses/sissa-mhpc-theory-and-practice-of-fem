@@ -99,3 +99,4 @@ If time permits:
 - [Adaptive Finite Element methods for the Poisson problem](https://classroom.github.com/a/at3-IuiW)
 - [Shared memory parallelization](https://classroom.github.com/a/_GQiC4oN)
 - [MPI parallelisation](https://classroom.github.com/a/QHg-q9wA)
+- [Vector valued problems](https://classroom.github.com/a/bdZ_Hjr9)
