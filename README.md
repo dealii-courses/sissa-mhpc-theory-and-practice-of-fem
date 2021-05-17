@@ -48,46 +48,119 @@ Course recordings:
 A tentative detailed program is shown below 
 (this will be updated during the course to reflect the actual course content)
 
-1. Practical Introduction to Galerkin methods
-2. Implementation of a serial Poisson solver
-   1. Introduction to tools (Python VS C++/IDE)
-   2. Paraview
-   3. [C++] Triangulation
-   4. [C++] Elementary FiniteElement types
-   5. [C++] Degrees of Freedom
-   6. [C++] ParameterHandler and ParsedFunction
-   7. [C++] Different types of boundary conditions
-   8. [C++] Curved geometries, high order mappings
-3. Lax-Milgram Lemma, Cea’s Lemma, Bramble-Hilbert Lemma, Nitsche's trick
-4. Construction of Manufactured solutions
-   1. [C++] Working on successively (uniformly) refined grids
-   2. [C++] Studying the convergence rates of FEM codes
-   3. [C++] ConvergenceTable
-5. Petrov-Galerkin finite element methods (BNB condition)
-6. Mixed and hybrid finite element methods
-7. Ladyzhhenskaya, Brezzi, Babuska VS Lax Milgram
-8. A priori error estimates for Mixed Problems
-    1. [C++] Mixed Laplace Problem (Raviar Thomas FEM)
-    2. [C++] Stokes problem
-    3. [C++] Convergence analysis of Stokes problem
-9. A posteriori Error Analysis (Poisson)
-    1. [C++] Adaptive Finite Element Methods
-    2. [C++] Convergence Analysis for AFEM
+02_fem_environment.pdf              
+03_Lagrangian_finite_elements.pdf   
+04_tria_dh_fe.pdf                   
+05_dofs_and_Vh.pdf                  
+06_mapping.pdf                      
+07_poisson.pdf                      
+08_denis_lion_bramble_hilbert.pdf   
+09_bramble_hilbert_dealii.pdf       
+10_nitsche_inverse_trace.pdf
+11_boundary_and_constraints.pdf
+12_a_posteriori_upper_bound.pdf
+13_dealii_afem.pdf
+14_a_posteriori_optimality.pdf
+15_shared_memory_parallelisation.pdf
+16_bnb_lbb_saddle_point.pdf
+17_mpi_parallelisation.pdf
+18_bnb_lbb_saddle_point_approximation.pdf
+19_vector_valued_pdes.pdf
 
-
-If time permits:
-
-10. Time dependent and non-linear problems
-    1. [C++] Navier-Stokes
-11. Parallelization techniques
-    1. [C++] Shared memory parallelization
-    2. [C++] Distributed memory parallelization
-    3. [C++] Parallel problems
-    4. [C++] From step-4 to step-40
-12. Preconditioning techniques
-    1. [C++] Multigrid methods
-    2. [C++] Block preconditioning
-
+1. Introduction
+   1. Model problem
+   2. Lax-Milgram Lemma
+   3. Cea’s Lemma
+2. [C++] Tools and background
+   1. Using modern IDEs: VisualStudio CODE
+   2. Using the "Remote" plugin to build with docker inside VS Code
+   3. Testing your code with Google Test
+3. Formal definition of Finite Elements
+   1. Lagrangian polynomial basis
+   2. Triangulation and degrees of freedom
+   3. Finite element triple
+   4. Lagrangian Finite Element spaces
+4. [C++] Introduction to deal.II
+   1. Deal.II general structure
+   2. Triangulation
+   3. Elementary FiniteElement types
+   4. Degrees of Freedom
+   5. Paraview
+5. Conforming finite element spaces
+   1. Local basis functions
+   2. Global basis functions
+   3. Numbering of degrees of freedom
+6. Scaling arguments
+   1. Affine mappings
+   2. Transformation of Sobolev norms under Affine mappings
+7. [C++] Solving a Poisson problem using deal.II
+   1. General program structure
+   2. Local assembly
+   3. Global distribution
+   4. ParameterHandler and ParsedFunction
+   5. Different types of boundary conditions
+   6. Curved geometries, high order mappings
+8. Interpolation error estimates for smooth functions
+   1. Denis-Lions Lemma
+   2. Bramble-Hilbert Lemma
+9. [C++] Checking a priori error estimates on globally refined grids
+   1. Construction of Manufactured solutions
+   2. Working on successively (uniformly) refined grids
+   3. Studying the convergence rates of FEM codes
+   4. ConvergenceTable
+10. A priori error estimates in H1 and L2
+    1. Bramble-Hilbert + Ceas = H1 a priori bounds
+    2. Nitsche's Lemma
+    3. Inverse Estimates
+    4. Trace inequalities
+11. [C++] Improving on our Poisson solver
+    1. Dirichlet boundary conditions as AffineConstraints
+    2. General (and efficient) treatment of Constraints in FEM codes
+    3. Neumann boundary conditions
+    4. Hanging nodes constraints
+12. A-posteriori error estimates - Part 1 (efficiency)
+    1.  Interpolation error on H1 functions: Scott-Zhang interpolation
+    2.  Orthogonal projections in H1 and L2
+    3.  Global upper bounds (reliability)
+13. [C++] Adaptive finite element methods in deal.II
+    1.  SOLVE-ESTIMATE-MARK-REFINE loop
+    2.  Kelly error estimator
+    3.  Dorfler marking strategy
+    4.  Fixed number marking strategy
+14. A-posteriori error estimates - Part 2 (optimality)
+    1.  Properties of bubble functions
+    2.  Lifting operator (from traces to values in the elements)
+    3.  Local optimality property
+    4.  Error balancing
+15. [C++] Shared memory parallelization
+    1.  Parallelize using threads
+    2.  Parallelize using tasks
+    3.  Exploiting the FEM loops characteristics: WorkStream
+16. Problems in general Banach spaces
+    1.  Closed range theorem and Open mapping theorem
+    2.  Banach-Necas-Babuska conditions
+    3.  Application to general mixed problems
+17.  [C++] Distributed memory parallelization
+    1.  Domain decomposition VS algebraic decomposition
+    2.  Splitting workload: partitioning with space filling curves
+    3.  Moving from serial Poisson to parallel distributed Poisson 
+18. A priori estimates for Petrov Galerkin and Mixed methods
+    1.  Cea's Lemma for Petrov Galerkin methods
+    2.  Cea's Lemma for Mixed problems
+    3.  Discrete infsup conditions
+    4.  Error estimates for mixed problems
+19. [C++] Vector valued problems
+    1.  Handling systems of PDEs
+    2.  Accessing subspaces using "Extractors"
+20. Proving the infsup condition
+    1.  Continuous case: mixed Poisson
+    2.  Fortin's trick
+    3.  Macroelement technique
+21. [C++] Mixed problems
+    1.  Block systems of equations
+    2.  Stokes system example
+    3.  Block-Preconditioning using LinearOperators
+    4.  Convergence of Stokes system, and infsup considerations
 ## Assignments
 
 - [Git & GitHub fundamentals](https://classroom.github.com/a/jgOfbppY)
