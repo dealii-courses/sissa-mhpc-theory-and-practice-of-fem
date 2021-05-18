@@ -48,25 +48,6 @@ Course recordings:
 A tentative detailed program is shown below 
 (this will be updated during the course to reflect the actual course content)
 
-02_fem_environment.pdf              
-03_Lagrangian_finite_elements.pdf   
-04_tria_dh_fe.pdf                   
-05_dofs_and_Vh.pdf                  
-06_mapping.pdf                      
-07_poisson.pdf                      
-08_denis_lion_bramble_hilbert.pdf   
-09_bramble_hilbert_dealii.pdf       
-10_nitsche_inverse_trace.pdf
-11_boundary_and_constraints.pdf
-12_a_posteriori_upper_bound.pdf
-13_dealii_afem.pdf
-14_a_posteriori_optimality.pdf
-15_shared_memory_parallelisation.pdf
-16_bnb_lbb_saddle_point.pdf
-17_mpi_parallelisation.pdf
-18_bnb_lbb_saddle_point_approximation.pdf
-19_vector_valued_pdes.pdf
-
 1. Introduction
    1. Model problem
    2. Lax-Milgram Lemma
@@ -173,3 +154,4 @@ A tentative detailed program is shown below
 - [Shared memory parallelization](https://classroom.github.com/a/_GQiC4oN)
 - [MPI parallelisation](https://classroom.github.com/a/QHg-q9wA)
 - [Vector valued problems](https://classroom.github.com/a/bdZ_Hjr9)
+- [Mixed problems (Stokes)](https://classroom.github.com/a/bNkyFTfT)
